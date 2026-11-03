@@ -1,0 +1,6 @@
+{
+  "name": "bsp_decompile",
+  "version": "0.1.0",
+  "dependencies": ["valve220", "map_convert"],
+  "parts": ["Editor"]
+}
