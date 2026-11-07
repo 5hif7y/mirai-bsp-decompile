@@ -7,8 +7,8 @@ import "core:os"
 import "core:strings"
 import "core:testing"
 import importer "mirai:cook/import"
-import mapfile "project:plugins/valve220/editor/mapfile"
-import valvemap "project:plugins/valve220/editor/loader"
+import mapfile "../../../valve220/editor/mapfile"
+import valvemap "../../../valve220/editor/loader"
 
 // Each test makes the same cube, [0,64] in map units, in one format, converts
 // it and imports the .map with the loader: 12 triangles between 0 and 2 m.

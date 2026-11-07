@@ -9,10 +9,14 @@ It needs `valve220` and [map_convert](https://github.com/5hif7y/mirai-map-conver
 
 ## Install
 
+It is not in the catalog on its own: there it is part of
+[brush_maps](https://github.com/5hif7y/mirai-brush-maps), which joins the map plugins in one install
+(`mirai plugin add brush_maps`). Installed alone, by its address, in the folder of a Mirai project:
+
 ```sh
-mirai plugin add valve220
-mirai plugin add map_convert
-mirai plugin add bsp_decompile
+mirai plugin add https://github.com/5hif7y/mirai-valve220.git
+mirai plugin add https://github.com/5hif7y/mirai-map-convert.git
+mirai plugin add https://github.com/5hif7y/mirai-bsp-decompile.git
 ```
 
 ## How a BSP becomes brushes
@@ -60,6 +64,10 @@ With `mirai test plugins/bsp_decompile/editor/bsp`. The BSP of the tests is a cu
 
 ## License
 
-GNU General Public License, version 2 or later: [LICENSE](LICENSE). The method follows the source of
-ericw-tools, which is GPL-2.0-or-later; the code was written for this plugin in Odin and its tests are
-its own. It runs only in the editor, on import: it is not part of a game made with Mirai.
+Licensed under either of [MIT](LICENSE-MIT) or [Apache-2.0](LICENSE-APACHE), at your option.
+
+The decompilation method is the one of [ericw-tools](https://github.com/ericwa/ericw-tools), by Eric
+Wasylishen and its contributors (GPL-2.0-or-later), and this plugin owes it to them: its `bsputil
+--decompile` and `common/decompile.cc` describe how a BSP becomes brushes again. The code of this plugin
+is an implementation in Odin written for it, and its tests are its own. It runs only in the editor, on
+import: it is not part of a game made with Mirai.

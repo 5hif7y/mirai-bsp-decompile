@@ -1,7 +1,7 @@
 package bsp_decompile_bsp
 
-import formats "project:plugins/map_convert/editor/formats"
-import mapfile "project:plugins/valve220/editor/mapfile"
+import formats "../../../map_convert/editor/formats"
+import mapfile "../../../valve220/editor/mapfile"
 
 // A BSP of Quake (29), GoldSrc (30) or BSP2, decompiled to brushes.
 

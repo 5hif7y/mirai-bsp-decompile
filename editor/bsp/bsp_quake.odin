@@ -1,8 +1,8 @@
 package bsp_decompile_bsp
 
 import "core:encoding/endian"
-import mapfile "project:plugins/valve220/editor/mapfile"
-import formats "project:plugins/map_convert/editor/formats"
+import mapfile "../../../valve220/editor/mapfile"
+import formats "../../../map_convert/editor/formats"
 
 // The BSP of Quake (version 29), of GoldSrc (30, Half-Life and Counter-Strike)
 // and BSP2 (Quake maps beyond the limits of 29): a header of 15 lumps. A

@@ -5,8 +5,8 @@ import "core:os"
 import "core:strings"
 import "core:testing"
 import importer "mirai:cook/import"
-import fixture "project:plugins/bsp_decompile/editor/fixture"
-import valve220 "project:plugins/valve220/editor"
+import fixture "./fixture"
+import valve220 "../../valve220/editor"
 
 @(private="file")
 temp_folder :: proc(name:string) -> string {

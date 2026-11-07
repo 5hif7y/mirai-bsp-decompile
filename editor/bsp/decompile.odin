@@ -3,11 +3,11 @@ package bsp_decompile_bsp
 import "core:fmt"
 import "core:strconv"
 import "core:strings"
-import mapfile "project:plugins/valve220/editor/mapfile"
-import formats "project:plugins/map_convert/editor/formats"
+import mapfile "../../../valve220/editor/mapfile"
+import formats "../../../map_convert/editor/formats"
 
 // Brushes back from a compiled BSP of Quake or GoldSrc, the method of the
-// decompiler of ericw-tools (bsputil --decompile, GPL; docs/LICENCIAS.md):
+// decompiler of ericw-tools (bsputil --decompile; see the README):
 //
 // 1. Each solid (or water, sky...) leaf of the tree of a model is the region
 //    behind the planes on the way to it, and becomes a brush: the planes of the

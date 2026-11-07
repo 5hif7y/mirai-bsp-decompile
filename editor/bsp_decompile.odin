@@ -9,11 +9,11 @@ import "mirai:editor"
 import "mirai:editor/api"
 import "mirai:std/base"
 import "mirai:std/serial"
-import bsp "project:plugins/bsp_decompile/editor/bsp"
-import map_convert "project:plugins/map_convert/editor"
-import formats "project:plugins/map_convert/editor/formats"
-import valvemap "project:plugins/valve220/editor/loader"
-import mapfile "project:plugins/valve220/editor/mapfile"
+import bsp "./bsp"
+import map_convert "../../map_convert/editor"
+import formats "../../map_convert/editor/formats"
+import valvemap "../../valve220/editor/loader"
+import mapfile "../../valve220/editor/mapfile"
 
 // BSPs of Quake (29), GoldSrc (30) and BSP2 in the import of the editor:
 // decompiled to brushes (bsp/decompile.odin), written as Valve 220 in memory
